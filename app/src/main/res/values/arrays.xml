@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="preset_names">
+        <item>Flat</item>
+        <item>Low Freq</item>
+        <item>High Freq</item>
+    </string-array>
+
+</resources>
+
+

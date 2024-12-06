@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">hearingaids</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="preset_prompt">Choose a preset:</string>
+    <string-array name="preset_options">
+        <item>Flat</item>
+        <item>Low Freq</item>
+        <item>High Freq</item>
+    </string-array>
+</resources>

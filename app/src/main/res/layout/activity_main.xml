@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/presetSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/preset_names" />
+
+    <SeekBar
+        android:id="@+id/band1SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100" />
+
+    <SeekBar
+        android:id="@+id/band2SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100" />
+
+    <SeekBar
+        android:id="@+id/band3SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100" />
+
+    <SeekBar
+        android:id="@+id/band4SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100" />
+
+    <SeekBar
+        android:id="@+id/band5SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100" />
+
+    <Button
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toggle"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="8dp"
+        />
+
+    <TextView
+        android:id="@+id/latencyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Real-time Latency: 0.00 ms"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Placeholder for average latency -->
+    <TextView
+        android:id="@+id/averageLatencyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average Latency: 0.00 ms"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <Switch
+        android:id="@+id/noiseCancellationSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/band5SeekBar"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Enable Noise Cancelling" />
+
+
+</LinearLayout>
